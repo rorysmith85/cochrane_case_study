@@ -6,8 +6,6 @@ import streamlit.components.v1 as components
 import altair as alt
 from vega_datasets import data
 
-path = "/Users/rorysmith/Desktop/cochrane_app/"
-
 def create_stance_dataframes(df):
     stances = ['neutral', 'misleading', 'nuanced_accurate']
 
@@ -105,7 +103,7 @@ evermore confusion among the public and allowing spaces to open up that would be
 st.subheader('Tracking the media spread')
 st.write('This is a paragraph of text in section 2.')
 
-news_stories = pd.read_csv(path + "news_stories_final_april21.csv")
+news_stories = pd.read_csv("news_stories_final_april21.csv")
 
 y_axis = st.selectbox("Select the metric you are interested in:", options=["impressions_cumulative", "retweets_cumulative"], key='news_stories')
 
@@ -116,7 +114,7 @@ scatter(news_stories)
 st.subheader('The top tweets during this time')
 st.write('This is a paragraph of text in section 2.')
 
-top_tweets = pd.read_csv(path + '99th_percentile_tweets.csv')
+top_tweets = pd.read_csv('99th_percentile_tweets.csv')
 
 y_axis = st.selectbox("Select the metric you are interested in:", options=["impressions_cumulative", "retweets_cumulative"], key='tweets')
 
