@@ -4,7 +4,6 @@ import numpy as np
 import json
 import streamlit.components.v1 as components
 import altair as alt
-from vega_datasets import data
 
 def create_stance_dataframes(df):
     stances = ['neutral', 'misleading', 'nuanced_accurate']
