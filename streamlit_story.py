@@ -16,7 +16,7 @@ from stvis import pv_static
 
 # st.set_page_config(layout="wide", initial_sidebar_state="expanded")
 
-path = "/Users/rorysmith/Desktop/cochrane_app/"
+# path = "/Users/rorysmith/Desktop/cochrane_app/"
 
 def create_stance_dataframes(df):
 	stances = ['neutral', 'misleading', 'nuanced_accurate']
@@ -136,7 +136,7 @@ evermore confusion among the public and allowing spaces to open up that would be
 st.subheader('Tracking the media spread')
 st.write('This is a paragraph of text in section 2.')
 
-news_stories = pd.read_csv(path + "news_stories_final_april21.csv")
+news_stories = pd.read_csv("news_stories_final_april21.csv")
 
 y_axis = st.selectbox("Select the metric you are interested in:", options=["impressions_cumulative", "retweets_cumulative"], key='news_stories')
 
@@ -147,7 +147,7 @@ scatter(news_stories)
 st.subheader('The top tweets during this time')
 st.write('This is a paragraph of text in section 2.')
 
-top_tweets = pd.read_csv(path + '99th_percentile_tweets.csv')
+top_tweets = pd.read_csv('99th_percentile_tweets.csv')
 
 y_axis = st.selectbox("Select the metric you are interested in:", options=["impressions_cumulative", "retweets_cumulative"], key='tweets')
 
@@ -202,10 +202,10 @@ def create_network(df):
 	net.show_buttons(filter_='physics')
 	return net
 
-nyt = pd.read_csv(path + 'nytimes_articles.csv')
+# nyt = pd.read_csv(path + 'nytimes_articles.csv')
 
 # Create the network using the create_network function
-net = create_network(nyt)
+# net = create_network(nyt)
 # options = r'var options = {"edges": {"color": {"inherit": true},"smooth": false},"physics": {"enabled": false,"minVelocity": 0.75}}'
 # net.set_options(options)
 
@@ -215,9 +215,9 @@ net = create_network(nyt)
 # In the Streamlit app, display the HTML file with the network visualization
 st.title("Network Visualization")
 st.markdown("This is a network visualization of the nytimes pieces:")
-net.save_graph(f'{path}/nytimes_graph.html')
+# net.save_graph(f'{path}/nytimes_graph.html')
 
-HtmlFile = open(f'{path}/nytimes_graph.html', 'r', encoding='utf-8')
+HtmlFile = open('nytimes_graph.html', 'r', encoding='utf-8')
 
 # HtmlFile = net.get_html()
 
