@@ -4,7 +4,7 @@ import numpy as np
 import json
 import streamlit.components.v1 as components
 import altair as alt
-import networkx as nx
+# import networkx as nx
 # from pyvis.network import Network
 from streamlit.components.v1 import html
 # import community as community_louvain
@@ -158,49 +158,49 @@ st.subheader('Nytimes articles')
 st.write('This is a paragraph of text in section 2.')
 
 
-def create_network(df):
-	G = nx.Graph()
+# def create_network(df):
+# 	G = nx.Graph()
 
-	# df['retweets'] = pd.to_numeric(df['retweets'])
+# 	# df['retweets'] = pd.to_numeric(df['retweets'])
 
-	for index, row in df.iterrows():
-		username = row['username']
-		retweets = row['retweets']
-		tweet = row['tweet']
-		G.add_node(username, retweets=retweets, tweet=tweet)
-		G.add_edge(username, row['original_link'])
+# 	for index, row in df.iterrows():
+# 		username = row['username']
+# 		retweets = row['retweets']
+# 		tweet = row['tweet']
+# 		G.add_node(username, retweets=retweets, tweet=tweet)
+# 		G.add_edge(username, row['original_link'])
 
-	net = Network(height='465px', width='100%', notebook=True, bgcolor='#222222', font_color='white')
+# 	net = Network(height='465px', width='100%', notebook=True, bgcolor='#222222', font_color='white')
 
-	# for index, row in df.iterrows():
-	#     username = row['username']
-	#     retweets = row['retweets']
-	#     tweet = row['tweet']
-	#     net.add_node(username, title=f"{username}<br>Retweets: {retweets}<br>Tweet: {tweet}")
+# 	# for index, row in df.iterrows():
+# 	#     username = row['username']
+# 	#     retweets = row['retweets']
+# 	#     tweet = row['tweet']
+# 	#     net.add_node(username, title=f"{username}<br>Retweets: {retweets}<br>Tweet: {tweet}")
 
-	net.from_nx(G)
-	net.barnes_hut(overlap=1)
-	net.repulsion(node_distance=800, central_gravity=0.01, spring_length=150)
+# 	net.from_nx(G)
+# 	net.barnes_hut(overlap=1)
+# 	net.repulsion(node_distance=800, central_gravity=0.01, spring_length=150)
 
-	partition = community_louvain.best_partition(G)
-	unique_communities = len(set(partition.values()))
-	# color_map = cm.get_cmap('viridis', unique_communities)
-	color_mapping = {0: "#32CD32", 1: "#FF7F7F"}
+# 	partition = community_louvain.best_partition(G)
+# 	unique_communities = len(set(partition.values()))
+# 	# color_map = cm.get_cmap('viridis', unique_communities)
+# 	color_mapping = {0: "#32CD32", 1: "#FF7F7F"}
 
-	for node in net.nodes:
-		community_id = partition[node['id']]
-		node['color'] = color_mapping[community_id]
-		# node['color'] = cm.colors.to_hex(color_map(partition[node['id']] / unique_communities))
-		if 'retweets' in node:
-			node['size'] = node['retweets'] / 10
-			tweet = node['tweet']
-			node['title'] = f"Tweet: {tweet}"
-			# print(node)
+# 	for node in net.nodes:
+# 		community_id = partition[node['id']]
+# 		node['color'] = color_mapping[community_id]
+# 		# node['color'] = cm.colors.to_hex(color_map(partition[node['id']] / unique_communities))
+# 		if 'retweets' in node:
+# 			node['size'] = node['retweets'] / 10
+# 			tweet = node['tweet']
+# 			node['title'] = f"Tweet: {tweet}"
+# 			# print(node)
 
-	# options_str = json.dumps(options)
-	# net.set_options(options_str)
-	net.show_buttons(filter_='physics')
-	return net
+# 	# options_str = json.dumps(options)
+# 	# net.set_options(options_str)
+# 	net.show_buttons(filter_='physics')
+# 	return net
 
 # nyt = pd.read_csv(path + 'nytimes_articles.csv')
 
