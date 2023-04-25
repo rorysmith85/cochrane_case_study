@@ -5,12 +5,12 @@ import json
 import streamlit.components.v1 as components
 import altair as alt
 import networkx as nx
-from pyvis.network import Network
+# from pyvis.network import Network
 from streamlit.components.v1 import html
-import community as community_louvain
-import matplotlib.cm as cm
+# import community as community_louvain
+# import matplotlib.cm as cm
 import re
-from stvis import pv_static
+# from stvis import pv_static
 # from pyvis.options import vis_options
 
 
