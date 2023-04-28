@@ -147,7 +147,9 @@ with content_column_1:
 
 	st.subheader('Tracking the media spread on Twitter')
 	st.write("The scatterplot chronologically shows how different media outlets reported on the Cochrane study and the amount of engagement they received on Twitter.\
-	You can hover over the nodes in the plot to see more details and you can click on the link in the nodes to open the tweet.")
+	You can hover over the nodes in the plot to see more details and you can click on the link in the nodes to open the tweet. The nodes are sized based on the number of\
+	impressions or retweets they have received — the larger the node, the more impressions or retweets. The x axis represents the days between January 29 and April 2023, and the\
+	y axis is the cumulative amount of impressions or retweets.")
 	st.write("As you can see, media stories that misinterpreted or misleadingly portrayed the findings of the Cochrane study far outpaced (in terms of impressions,\
 	retweets, and number of stories) media stories that accurately depicted the findings of the study. Using Meltwater and scraping Altmetric, we found 152 news stories\
 	published between January 29 and April 1, 2023 addressing the the Cochrane study. Of these, 70% were misleading.")
@@ -162,8 +164,9 @@ scatter(news_stories)
 # Add a subheader and another text paragraph under the second section followed by scatter plot
 content_column_2 = st.columns((1, 2.7, 1))[1]
 with content_column_2:
-	st.subheader('The top tweets during this time')
-	st.write('This is a paragraph of text in section 2.')
+	st.subheader('Top Tweets talking about Cochrane study')
+	st.write("This scatterplot chronologically captures the top 1 percent of tweets (based on retweets) discussing the Cochrane study. While these tweets make up 1%\
+	of all the tweets in the dataset, they account for 80 percent of the retweets.")
 	y_axis = st.selectbox("Select the metric you are interested in:", options=["impressions_cumulative", "retweets_cumulative"], key='tweets')
 
 top_tweets = pd.read_csv('99th_percentile_tweets_april27.csv')
@@ -173,8 +176,8 @@ top_tweets = pd.read_csv('99th_percentile_tweets_april27.csv')
 scatter(top_tweets)
 
 
-st.subheader('Nytimes articles')
-st.write('This is a paragraph of text in section 2.')
+# st.subheader('Nytimes articles')
+# st.write('This is a paragraph of text in section 2.')
 
 
 # def create_network(df):
@@ -235,8 +238,11 @@ content_column_2 = st.columns((1, 2.3, 1))[1]
 
 # Add a header and a text paragraph under the title within the centered column
 with content_column_2:
-	st.title("Network Visualization")
-	st.markdown("This is a network visualization of the nytimes pieces:")
+	st.subheader("The networks sharing the original misleading NYT op-ed and its subsequent correction")
+	st.write("The network visualization shows the networks that shared the two NYT op-ed pieces. The nodes are the Twitter accounts that shared\
+	the articles. As you can see, the networks are very isolated. Those accounts that shared both links — these are the nodes in between the two\
+	hubs of activity — are mostly pushing mask-skeptic narratives. The isolated nature of the networks evidences how polarized these\
+	audiences are on Twitter.")
 
 # net.save_graph(f'{path}/nytimes_graph.html')
 
