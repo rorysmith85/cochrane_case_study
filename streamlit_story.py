@@ -262,7 +262,11 @@ with content_column_3:
 	st.title("Entire network Visualization")
 	st.markdown("This is a network visualization of the nytimes pieces:")
 
+from PIL import Image
 
+image = Image.open('full_viz.png')
+
+st.image(image, caption='Full Viz')
 # # load the two dataframes needed for the network viz
 # color_code = pd.read_csv(f'{path}color_code_misleading.csv')
 # tweets_stance = pd.read_csv(f'{path}full_links_tweets_network_data.csv')
