@@ -4,19 +4,19 @@ import numpy as np
 import json
 import streamlit.components.v1 as components
 import altair as alt
-import networkx as nx
-from pyvis.network import Network
+# import networkx as nx
+# from pyvis.network import Network
 from streamlit.components.v1 import html
-import community as community_louvain
+# import community as community_louvain
 import matplotlib.cm as cm
 import re
-from stvis import pv_static
+# from stvis import pv_static
 from collections import defaultdict
 
 
 st.set_page_config(layout="wide", initial_sidebar_state="expanded")
 
-path = "/Users/rorysmith/Desktop/cochrane_app/"
+# path = "/Users/rorysmith/Desktop/cochrane_app/"
 
 def create_stance_dataframes(df):
 	stances = ['neutral', 'misleading', 'nuanced_accurate']
@@ -153,12 +153,7 @@ with content_column_1:
 	published between January 29 and April 1, 2023 addressing the the Cochrane study. Of these, 70% were misleading.")
 	y_axis = st.selectbox("Select the metric you are interested in:", options=["impressions_cumulative", "retweets_cumulative"], key='news_stories')
 
-news_stories = pd.read_csv(path + "news_stories_final_april26.csv")
-
-# news_stories = pd.read_csv(path + "news_stories_final_april21.csv")
-
-# y_axis = st.selectbox("Select the metric you are interested in:", options=["impressions_cumulative", "retweets_cumulative"], key='news_stories')
-
+news_stories = pd.read_csv("news_stories_final_april26.csv")
 
 
 scatter(news_stories)
@@ -171,7 +166,7 @@ with content_column_2:
 	st.write('This is a paragraph of text in section 2.')
 	y_axis = st.selectbox("Select the metric you are interested in:", options=["impressions_cumulative", "retweets_cumulative"], key='tweets')
 
-top_tweets = pd.read_csv(path + '99th_percentile_tweets_april27.csv')
+top_tweets = pd.read_csv('99th_percentile_tweets_april27.csv')
 
 # y_axis = st.selectbox("Select the metric you are interested in:", options=["impressions_cumulative", "retweets_cumulative"], key='tweets')
 
@@ -182,56 +177,56 @@ st.subheader('Nytimes articles')
 st.write('This is a paragraph of text in section 2.')
 
 
-def create_network(df):
-	G = nx.Graph()
+# def create_network(df):
+# 	G = nx.Graph()
 
-	# Create dictionaries to store all tweets and cumulative retweets for each username
-	tweets_by_username = {}
-	retweets_by_username = {}
+# 	# Create dictionaries to store all tweets and cumulative retweets for each username
+# 	tweets_by_username = {}
+# 	retweets_by_username = {}
 
-	for index, row in nyt.iterrows():
-		username = row['username']
-		retweets = row['retweets']
-		tweet = row['tweet']
+# 	for index, row in nyt.iterrows():
+# 		username = row['username']
+# 		retweets = row['retweets']
+# 		tweet = row['tweet']
 
-		if username in tweets_by_username:
-			tweets_by_username[username].append(tweet)
-			retweets_by_username[username] += retweets
-		else:
-			tweets_by_username[username] = [tweet]
-			retweets_by_username[username] = retweets
+# 		if username in tweets_by_username:
+# 			tweets_by_username[username].append(tweet)
+# 			retweets_by_username[username] += retweets
+# 		else:
+# 			tweets_by_username[username] = [tweet]
+# 			retweets_by_username[username] = retweets
 
-		G.add_node(username)
-		G.add_edge(username, row['original_link'])
+# 		G.add_node(username)
+# 		G.add_edge(username, row['original_link'])
 
-	net = Network(height='700px', width='1200px', notebook=True, bgcolor='#222222', font_color='white')
+# 	net = Network(height='700px', width='1200px', notebook=True, bgcolor='#222222', font_color='white')
 
 
-	net.from_nx(G)
-	net.barnes_hut(overlap=1)
-	net.repulsion(node_distance=800, central_gravity=0.01, spring_length=150)
+# 	net.from_nx(G)
+# 	net.barnes_hut(overlap=1)
+# 	net.repulsion(node_distance=800, central_gravity=0.01, spring_length=150)
 
-	partition = community_louvain.best_partition(G)
-	unique_communities = len(set(partition.values()))
-	color_mapping = {0: "#32CD32", 1: "#FF7F7F"}
+# 	partition = community_louvain.best_partition(G)
+# 	unique_communities = len(set(partition.values()))
+# 	color_mapping = {0: "#32CD32", 1: "#FF7F7F"}
 
-	for node in net.nodes:
-		community_id = partition[node['id']]
-		node['color'] = color_mapping[community_id]
-		username = node['id']
-		node['size'] = retweets_by_username.get(username, 0) / 10
-		all_tweets = tweets_by_username.get(username, [])
-		formatted_tweets = "<br>".join([f'<a href="{t}" target="_blank">{t}</a>' for t in all_tweets])
-		node['title'] = f"Username: {username}<br>{formatted_tweets}"
+# 	for node in net.nodes:
+# 		community_id = partition[node['id']]
+# 		node['color'] = color_mapping[community_id]
+# 		username = node['id']
+# 		node['size'] = retweets_by_username.get(username, 0) / 10
+# 		all_tweets = tweets_by_username.get(username, [])
+# 		formatted_tweets = "<br>".join([f'<a href="{t}" target="_blank">{t}</a>' for t in all_tweets])
+# 		node['title'] = f"Username: {username}<br>{formatted_tweets}"
 		
 			
 
-	return net
+# 	return net
 
-nyt = pd.read_csv(path + 'nytimes_articles.csv')
+# nyt = pd.read_csv(path + 'nytimes_articles.csv')
 
-# Create the network using the create_network function
-net = create_network(nyt)
+# # Create the network using the create_network function
+# net = create_network(nyt)
 
 # pv_static(net)
 
@@ -245,7 +240,7 @@ with content_column_2:
 
 # net.save_graph(f'{path}/nytimes_graph.html')
 
-HtmlFile = open(f'{path}/nytimes_graph.html', 'r', encoding='utf-8')
+HtmlFile = open('nytimes_graph.html', 'r', encoding='utf-8')
 
 html(HtmlFile.read(), height=900, width=1000)
 
@@ -324,9 +319,9 @@ with content_column_3:
 
 # net_2.save_graph(f'{path}/full_links_graph.html')
 
-HtmlFile2 = open(f'{path}/full_links_graph.html', 'r', encoding='utf-8')
+# HtmlFile2 = open(f'{path}/full_links_graph.html', 'r', encoding='utf-8')
 
-html(HtmlFile2.read(), height=900, width=1000)
+# html(HtmlFile2.read(), height=900, width=1000)
 
 
 
