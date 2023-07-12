@@ -7,6 +7,7 @@ import altair as alt
 import networkx as nx
 from pyvis.network import Network
 from streamlit.components.v1 import html
+import community as community_louvain
 import matplotlib.cm as cm
 import re
 from collections import defaultdict
