@@ -472,8 +472,8 @@ def set_page_layout():
         """
         <style>
         #root > div > div > div > div > div > section > div:nth-child(1) > div:nth-child(1) > div > div:nth-child(14) {
-            padding-top: -20px !important;
-            margin-top: -200px !important;
+            padding-bottom: -50px !important;
+            margin-bottom: -50px !important;
         }
         </style>
         """,
