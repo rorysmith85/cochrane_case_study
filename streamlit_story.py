@@ -342,10 +342,10 @@ def create_network(df):
 
 	return net
 
-nyt = pd.read_csv( 'nytimes_articles.csv')
+# nyt = pd.read_csv( 'nytimes_articles.csv')
 
-# Create the network using the create_network function
-net = create_network(nyt)
+# # Create the network using the create_network function
+# net = create_network(nyt)
 
 # In the Streamlit app, display the HTML file with the network visualization
 content_column_2 = st.columns((1, 2.3, 1))[1]
