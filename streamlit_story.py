@@ -261,7 +261,7 @@ content_column_2 = st.columns((1, 2, 1))[1]
 
 # Add a header and a text paragraph under the title within the centered column
 with content_column_1:
-	st.subheader('Methodology')
+	st.header('Methodology')
 	st.write("For analyzing social media conversations, we gathered all the tweets, posts and videos that included the words cochrane and mask between January 29, 2023 and April 1, 2023, using the \
  	APIs of Twitter, Facebook and YouTube. The data resulted in thousands of tweets and posts. Because of this, we opted to focus on those tweets and posts that generated 80 percent of the retweets \
   	(Twitter) and interactions (Facebook). Focusing on high-engagement posts allows us to capture accounts that [make up a disproportionately large share of content views and generally have an \
@@ -278,13 +278,72 @@ with content_column_1:
 
 # scatter(news_stories)
 
-content_column_1_point_5 = st.columns((1, 2.7, 1))[1]
-with content_column_1_point_5:
-	st.subheader('Tracking the media spread on Facebook')
-	st.write("The scatterplot chronologically shows how different media outlets reported on the Cochrane study and the amount of engagement they received on Facebook.\
-	You can hover over the nodes in the plot to see more details and you can click on the link in the nodes to open the tweet. The nodes are sized based on the number of\
-	interactions they have received — the larger the node, the more interactions the story received on Facebook. The x axis represents the days between January 29 and April 1, 2023, and the\
-	y axis is the cumulative amount of interactions.")
+content_column_3 = st.columns((1, 2, 1))[1]
+with content_column_3:
+	st.header('Findings')
+	st.subheader("Misleading Content and Media Stories Dominate Facebook and Twitter Engagement")
+	st.write("Of the 152 news stories we identified, 70 percent provided an incomplete analysis of the actual findings of the study or misrepresented them altogether. In such cases, \
+ 	news stories would often present the study as evidence that masks are ineffective against Covid-19 or would fail to mention the tenuousness of the evidence and the limitations of the study. \
+  	Content inaccurately depicting the findings received 6.4 times more retweets on Twitter and 3.4 times more interactions on Facebook than accurate content. None of the content we reviewed \
+   	received a fact check despite a clarifying statement from Cochrane on March 10, 2023.") 
+	st.subeader("Influential Misinformation Spreaders Operate Across Multiple Platforms")
+	st.write("Some of the same personalities who posted content about the Cochrane review on Substack were also active across multiple social media platforms. For instance, Vinay Prasad was \
+ 	among several people and entities that posted misleading content about the study across YouTube, Twitter and Facebook.")
+	st.subheader("Substack as an Early Amplifier of Misinterpreted Findings")
+	st.write("The online publishing platform Substack played a large role early on in spreading misleading narratives about the Cochrane study. Over 90 percent of the 28 Substack articles we identified \
+ 	inaccurately presented the study findings. The articles were primarily from controversial figures known for spreading misinformation about Covid-19 and public health policy during the pandemic.")
+	st.subheader("Disproportionate Influence of a Few Accounts")
+	st.write("A handful of Twitter and Facebook accounts were responsible for 80 percent of the retweets and interactions, respectively. Misleading content from these accounts moved quicker and \
+ 	more broadly on social media than did accurate accounts of the study findings.")
+	st.subheader("Stephens’ NYT op-ed a Major Amplifier of False Narratives")
+	st.write("While the ratio of inaccurate to accurate posts was around 5:1 on Twitter before the publication of Bret Stephens' Feb. 21, 2023 New York Times op-ed, his piece resulted in a \
+ 	massive spike in interactions on both Twitter and Facebook, with people sharing or commenting on the story. This news story created the biggest spike of any publication writing about the \
+  	cochrane study in our dataset.")
+	st.subheader("Multi-Language Spread of Misinformation on Facebook")
+	st.write("Misleading information about the Cochrane study on Facebook was not confined to English. It spread across multiple languages, including Albanian, Arabic, Bosnian, Finnish, French, \
+ 	German, Hungarian, Japanese, Korean, Russian and Swedish, underscoring its global reach.")
+	st.subheader("Inaccurate Content on YouTube Gets a Disproportionate Number of Views")
+	st.write("The disparity between content inaccurately reporting on the Cochrane findings and accurate reporting was particularly pronounced on YouTube. Inaccurate videos attracted nearly 38.5 times more views than accurate videos, contributing significantly to the spread \
+ 	of misinformation.")
+	st.subheader("Polarized Sharing of News Articles on Twitter")
+	st.write("A clear polarization was identified in the communities sharing links to news stories about the Cochrane study. With minimal crossover between those sharing accurate and misleading \
+ 	narratives, the data indicates users were mostly exposed to, or chose to consume, a single narrative, with misleading narratives having an outsized impact.")
+
+content_column_4 = st.columns((1, 2, 1))[1]
+with content_column_4:
+	st.header("Tracking the spread of content related to the Cochrane study on Twitter, Facebook and YouTube")
+	st.write("In the following section, we provide the details of a data analysis that examined the top content — in terms of engagement, such as views, impressions and interactions — on Twitter, \
+ 	Facebook and YouTube related to the findings of the Cochrane study. In a subsequent section, we will look specifically at the social media engagement generated by online news stories \
+  	reporting on the study. This first section, however, looks specifically at the top-performing content, which can but doesn’t necessarily also include online news stories.")
+	st.subheader("Methodology")
+	st.write("The posts we scraped were organized into several spreadsheets. We then had several researchers inspect each of the posts to ensure that they were related to the Cochrane study and not \
+ 	false positives. The researchers also coded the posts as either *misleading* or *nuanced_accurate*. Posts were coded *misleading* if, according to the Cochrane clarification, they framed the study \
+  	results as evidence that masks or masking policies during Covid were ineffective or didn’t work. Posts were also coded *misleading* if they failed to provide information about how the results \
+   	of the study were inconclusive. Posts that provided these details, not necessarily that masks are effective, but that the study lacks evidence to say one way or the other, were coded as \
+    	*nuanced_accurate*.")
+	st.write("The following scatterplots chronologically plot engagement around the Cochrane study on Twitter, Facebook and YouTube. You can hover over the nodes in the plot to see more details \
+ 	and you can click on the link in the nodes to open the tweet, post or video. The nodes are sized based on the number ofimpressions or retweets they have received — the larger the node, \
+  	the more impressions, retweets, interactions or views. The x axis represents the days between January 29 and April 2023, and the y axis is the cumulative amount of engagement.")
+	st.subheader("Twitter")
+	st.write("1 percent of accounts tweeting about the Cochrane study accounted for 80 percent of retweets, highlighting the disproportionate impact a handful of accounts had on the overall \
+ 	conversation. Among these top tweeters, accounts that distorted, misread or failed to properly frame the study's findings outpaced those that accurately communicated the study results. \
+  	In total, there were 272 tweets from accounts inaccurately portraying the study's results, garnering 158,000 retweets and 32 million impressions, while 89 tweets from accounts accurately \
+   	conveying the findings generated 25,000 retweets and 13 million impressions. In other words, for every accurate tweet, there were three erroneous ones. These misleading tweets had a \
+    	significantly broader reach and attracted more engagement, amassing 6.4 times more retweets and 2.5 times more impressions than their accurate counterparts.") 
+
+top_tweets = pd.read_csv('99th_percentile_tweets_april27.csv')
+
+y_axis = st.selectbox("Select the metric you are interested in:", options=["impressions_cumulative", "retweets_cumulative"], key='tweets')
+
+scatter(top_tweets)
+
+	st.write('''Bret Stephens’ February 21, 2023 New York Times op-ed, headlined “The Mask Mandates Did Nothing. Will Any Lessons Be Learned?” created a large jump in engagement \
+ 	and amplified the false narrative that masks are ineffective. But even before publication of the piece, content inaccurately interpreting the study was hurtling ahead of accurate \
+  	content on Twitter. Between January 30, 2023, when the Cochrane study was published, and the date of Stephens' piece, the ratio of inaccurate posts to accurate ones was almost 5:1, \
+   	receiving 15 times more retweets and 5.4 times more impressions.''')
+
+	
+
 
 news_stories_facebook = pd.read_csv('aggregate_facebook.csv')
 
