@@ -9,7 +9,6 @@ from pyvis.network import Network
 from streamlit.components.v1 import html
 import matplotlib.cm as cm
 import re
-from stvis import pv_static
 from collections import defaultdict
 
 
@@ -346,8 +345,6 @@ nyt = pd.read_csv( 'nytimes_articles.csv')
 
 # Create the network using the create_network function
 net = create_network(nyt)
-
-# pv_static(net)
 
 # In the Streamlit app, display the HTML file with the network visualization
 content_column_2 = st.columns((1, 2.3, 1))[1]
