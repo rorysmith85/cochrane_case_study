@@ -336,7 +336,7 @@ top_tweets = pd.read_csv('99th_percentile_tweets_april27.csv')
 y_axis = st.selectbox("Select the metric you are interested in:", options=["impressions_cumulative", "retweets_cumulative"], key='tweets')
 
 scatter(top_tweets)
-
+with content_column_4:
 	st.write('''Bret Stephens’ February 21, 2023 New York Times op-ed, headlined “The Mask Mandates Did Nothing. Will Any Lessons Be Learned?” created a large jump in engagement \
  	and amplified the false narrative that masks are ineffective. But even before publication of the piece, content inaccurately interpreting the study was hurtling ahead of accurate \
   	content on Twitter. Between January 30, 2023, when the Cochrane study was published, and the date of Stephens' piece, the ratio of inaccurate posts to accurate ones was almost 5:1, \
