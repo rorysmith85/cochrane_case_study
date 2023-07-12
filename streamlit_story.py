@@ -237,10 +237,10 @@ with content_column_1:
   	health academic conferences — it drove mainstream conversations based on the false assertion that masks don’t work.")
 	st.write("The original review was published on January 30, 2023, but almost immediately news stories and headlines <a href=https://www.washingtonexaminer.com/restoring-america/faith-freedom-self-reliance/gold-standard-scientific-study-finds-masks-are-useless-against-covid> \
  	misrepresenting the findings</a> and inaccurately claiming that “masks don’t work” jumped from Substack to ZeroHedge, the Washington Free Beacon and Fox News while simultaneously moving at speed \
-  	across Twitter and Facebook. On February 21, three weeks after the study’s publication, <a href=https://www.nytimes.com/2023/02/21/opinion/do-mask-mandates-work.html>an op-ed in the New York Times \
-   	by Bret Stephens</a> accelerated the spread of misleading claims surrounding the study, declaring in its headline that “the mask mandates did nothing.”  Various fact-checks, \
-    	<a href=https://www.cochrane.org/news/statement-physical-interventions-interrupt-or-reduce-spread-respiratory-viruses-review> a statement by Cochrane<a/>, which underlined how the results of the \
-     	study were inconclusive, as well as <a href=https://www.nytimes.com/2023/03/10/opinion/masks-work-cochrane-study.html>another New York Times op-ed<a/> discussing that statement were issued but they \
+  	across Twitter and Facebook. On February 21, three weeks after the study’s publication, [an op-ed in the New York Times \
+   	by Bret Stephens](https://www.nytimes.com/2023/02/21/opinion/do-mask-mandates-work.html) accelerated the spread of misleading claims surrounding the study, declaring in its headline that “the mask mandates did nothing.”  Various fact-checks, \
+    	[a statement by Cochrane](https://www.cochrane.org/news/statement-physical-interventions-interrupt-or-reduce-spread-respiratory-viruses-review), which underlined how the results of the \
+     	study were inconclusive, as well as [another New York Times op-ed](https://www.nytimes.com/2023/03/10/opinion/masks-work-cochrane-study.html) discussing that statement were issued but they \
       	had little impact on the spread of misleading content on Facebook and Twitter.", unsafe_allow_html=True)
 	st.write("Nonetheless, by the time the statement and second op-ed were published, inaccurate versions of the study findings had received at least 27 million impressions on Twitter, several million \
 	views on YouTube, and tens of thousands of interactions on Facebook across multiple languages.")
