@@ -244,7 +244,7 @@ with content_column_1:
       	had little impact on the spread of misleading content on Facebook and Twitter.", unsafe_allow_html=True)
 	st.write("Nonetheless, by the time the statement and second op-ed were published, inaccurate versions of the study findings had received at least 27 million impressions on Twitter, several million \
 	views on YouTube, and tens of thousands of interactions on Facebook across multiple languages.")
- 	st.write("In this case study, we track the spread of content, including media reports, related to the findings of the Cochrane study on Twitter, Facebook and YouTube. It shows how poorly worded \
+	st.write("In this case study, we track the spread of content, including media reports, related to the findings of the Cochrane study on Twitter, Facebook and YouTube. It shows how poorly worded \
   	communications products can result in misleading coverage. In our networked information ecosystem, clarifying statements or corrections stand little chance of being effective, particularly on \
    	issues that are politicized. And it raises questions about the need for stringent fact checking, even for op-ed pages, as reputable news sources have an outsized role in amplifying the spread of \
     	information.)
