@@ -1,4 +1,5 @@
 networkx==2.6
 altair==4.2.2
 pyvis==0.3.2
+python-louvain==0.16
 
