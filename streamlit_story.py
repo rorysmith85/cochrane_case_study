@@ -471,9 +471,9 @@ def set_page_layout():
     st.markdown(
         """
         <style>
-        #root > div > div > div > div > div > section > div:nth-child(1) > div:nth-child(1) > div > div:nth-child(14) {
-            padding-bottom: -50px !important;
-            margin-bottom: -50px !important;
+        #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-z5fcl4.e1g8pov64 > div:nth-child(1) > div > div:nth-child(16) {
+            padding-top: -50px !important;
+            margin-top: -50px !important;
         }
         </style>
         """,
