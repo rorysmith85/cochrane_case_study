@@ -15,7 +15,7 @@ from collections import defaultdict
 
 st.set_page_config(layout="wide", initial_sidebar_state="expanded")
 
-path = "/Users/rorysmith/Desktop/cochrane_app/"
+# path = "/Users/rorysmith/Desktop/cochrane_app/"
 
 def create_stance_dataframes(df):
 	stances = ['neutral', 'misleading', 'nuanced_accurate']
@@ -248,7 +248,7 @@ with content_column_1:
 	published between January 29 and April 1, 2023 addressing the the Cochrane study. Of these, 70% were misleading.")
 	y_axis = st.selectbox("Select the metric you are interested in:", options=["impressions_cumulative", "retweets_cumulative"], key='news_stories')
 
-news_stories = pd.read_csv(path + "news_stories_final_april26.csv")
+news_stories = pd.read_csv("news_stories_final_april26.csv")
 
 
 scatter(news_stories)
@@ -261,7 +261,7 @@ with content_column_1_point_5:
 	interactions they have received — the larger the node, the more interactions the story received on Facebook. The x axis represents the days between January 29 and April 1, 2023, and the\
 	y axis is the cumulative amount of interactions.")
 
-news_stories_facebook = pd.read_csv(path + 'aggregate_facebook.csv')
+news_stories_facebook = pd.read_csv('aggregate_facebook.csv')
 
 scatter_facebook(news_stories_facebook)
 
@@ -273,7 +273,7 @@ with content_column_8:
 	interactions they have received — the larger the node, the more interactions the story received on Facebook. The x axis represents the days between January 29 and April 1, 2023, and the\
 	y axis is the cumulative amount of interactions.")
 
-facebook_top_posts = pd.read_csv(path + 'facebook_top_80_cochrane.csv')
+facebook_top_posts = pd.read_csv('facebook_top_80_cochrane.csv')
 
 scatter_facebook(facebook_top_posts)
 
@@ -285,7 +285,7 @@ with content_column_2:
 	of all the tweets in the dataset, they account for 80 percent of the retweets.")
 	y_axis = st.selectbox("Select the metric you are interested in:", options=["impressions_cumulative", "retweets_cumulative"], key='tweets')
 
-top_tweets = pd.read_csv(path + '99th_percentile_tweets_april27.csv')
+top_tweets = pd.read_csv( '99th_percentile_tweets_april27.csv')
 
 # y_axis = st.selectbox("Select the metric you are interested in:", options=["impressions_cumulative", "retweets_cumulative"], key='tweets')
 
@@ -342,7 +342,7 @@ def create_network(df):
 
 	return net
 
-nyt = pd.read_csv(path + 'nytimes_articles.csv')
+nyt = pd.read_csv( 'nytimes_articles.csv')
 
 # Create the network using the create_network function
 net = create_network(nyt)
@@ -450,7 +450,7 @@ with content_column_4:
 	st.title("YouTube Videos")
 	st.markdown("YouTube Videos")
 
-yt = pd.read_csv(path + 'cochrane_youtube_coded.csv')
+yt = pd.read_csv( 'cochrane_youtube_coded.csv')
 
 # cleaning the csv file
 yt = yt[~yt.stance.isna()]
