@@ -242,7 +242,7 @@ with content_column_1:
     	<a href=https://www.cochrane.org/news/statement-physical-interventions-interrupt-or-reduce-spread-respiratory-viruses-review> a statement by Cochrane<a/>, which underlined how the results of the \
      	study were inconclusive, as well as <a href=https://www.nytimes.com/2023/03/10/opinion/masks-work-cochrane-study.html>another New York Times op-ed<a/> discussing that statement were issued but they \
       	had little impact on the spread of misleading content on Facebook and Twitter.", unsafe_allow_html=True)
-       	st.write("Nonetheless, by the time the statement and second op-ed were published, inaccurate versions of the study findings had received at least 27 million impressions on Twitter, several million \
+	st.write("Nonetheless, by the time the statement and second op-ed were published, inaccurate versions of the study findings had received at least 27 million impressions on Twitter, several million \
 	views on YouTube, and tens of thousands of interactions on Facebook across multiple languages.")
  	st.write("In this case study, we track the spread of content, including media reports, related to the findings of the Cochrane study on Twitter, Facebook and YouTube. It shows how poorly worded \
   	communications products can result in misleading coverage. In our networked information ecosystem, clarifying statements or corrections stand little chance of being effective, particularly on \
