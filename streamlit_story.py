@@ -247,8 +247,8 @@ with content_column_1:
 	st.write("In this case study, we track the spread of content, including media reports, related to the findings of the Cochrane study on Twitter, Facebook and YouTube. It shows how poorly worded \
   	communications products can result in misleading coverage. In our networked information ecosystem, clarifying statements or corrections stand little chance of being effective, particularly on \
    	issues that are politicized. And it raises questions about the need for stringent fact checking, even for op-ed pages, as reputable news sources have an outsized role in amplifying the spread of \
-    	information.)
-     	st.write("It also underlines how academic journals and research publications — the perennial gatekeepers of knowledge — no longer have any room for missteps or errors. On politicized topics \
+    	information.")
+	st.write("It also underlines how academic journals and research publications — the perennial gatekeepers of knowledge — no longer have any room for missteps or errors. On politicized topics \
       	(and unfortunately viruses, masks and vaccines now fall into this category), “trusted” sources of information are increasingly being weaponized by those looking for “credible sources” to support \
        	outlandish claims. The idea that the gold-standard institution for publishing systematic reviews on health care and health policy, Cochrane, was claiming any type of ambiguity around the \
 	effectiveness of masks was so surprising. And among reporters without a solid understanding of the limitations of Randomly Controlled Trials (RCTs), the suggestion in the faulty abstract — that \
