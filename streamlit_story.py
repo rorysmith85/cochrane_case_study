@@ -357,7 +357,7 @@ with content_column_2:
 
 # net.save_graph(f'{path}/nytimes_graph.html')
 
-HtmlFile = open(f'{path}/nytimes_graph.html', 'r', encoding='utf-8')
+HtmlFile = open('nytimes_graph.html', 'r', encoding='utf-8')
 
 html(HtmlFile.read(), height=900, width=1000)
 
