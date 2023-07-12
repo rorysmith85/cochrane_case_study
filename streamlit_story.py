@@ -467,6 +467,21 @@ with content_column_8:
  	the extent to which accounts shared both articles. The red nodes are Twitter accounts that tweeted Stephens' piece, while the green nodes are accounts that tweeted Tufekci’s piece. \
   	The size of the nodes signifies the number of retweets the tweet received. You can click on the nodes to link out to the tweet.")
 
+def set_page_layout():
+    st.markdown(
+        """
+        <style>
+        #root > div > div > div > div > div > section > div:nth-child(1) > div:nth-child(1) > div > div:nth-child(14) {
+            padding-bottom: 0 !important;
+            margin-bottom: 0 !important;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+# Call the layout setting function
+set_page_layout()
 HtmlFile = open('nytimes_graph.html', 'r', encoding='utf-8')
 
 html(HtmlFile.read(), height=900, width=1000)
