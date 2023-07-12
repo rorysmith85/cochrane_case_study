@@ -375,8 +375,8 @@ with content_column_3:
 
 
 # load the two dataframes needed for the network viz
-color_code = pd.read_csv(f'{path}color_code_misleading.csv')
-tweets_stance = pd.read_csv(f'{path}top_80_percent_full_links_tweets_network_data.csv')
+color_code = pd.read_csv('color_code_misleading.csv')
+tweets_stance = pd.read_csv('top_80_percent_full_links_tweets_network_data.csv')
 
 G = nx.DiGraph()
 
@@ -434,9 +434,9 @@ for edge in net_2.edges:
 	edge['color'] = source_node_color
 
 
-net_2.save_graph(f'{path}/full_links_graph.html')
+net_2.save_graph('full_links_graph.html')
 
-HtmlFile2 = open(f'{path}/full_links_graph.html', 'r', encoding='utf-8')
+HtmlFile2 = open('full_links_graph.html', 'r', encoding='utf-8')
 
 html(HtmlFile2.read(), height=900, width=1000)
 
