@@ -467,13 +467,13 @@ with content_column_8:
  	the extent to which accounts shared both articles. The red nodes are Twitter accounts that tweeted Stephens' piece, while the green nodes are accounts that tweeted Tufekci’s piece. \
   	The size of the nodes signifies the number of retweets the tweet received. You can click on the nodes to link out to the tweet.")
 
-def set_page_layout():
+def set_page_layout1():
     st.markdown(
         """
         <style>
         #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-z5fcl4.e1g8pov64 > div:nth-child(1) > div > div:nth-child(16) {
-            padding-top: -100px !important;
-            margin-top: -100px !important;
+            padding-top: -150px !important;
+            margin-top: -150px !important;
         }
         </style>
         """,
@@ -481,7 +481,7 @@ def set_page_layout():
     )
 
 # Call the layout setting function
-set_page_layout()
+set_page_layout1()
 HtmlFile = open('nytimes_graph.html', 'r', encoding='utf-8')
 
 html(HtmlFile.read(), height=900, width=1000)
@@ -560,9 +560,26 @@ for edge in net_2.edges:
 
 net_2.save_graph('full_links_graph.html')
 
+def set_page_layout_2():
+    st.markdown(
+        """
+        <style>
+        #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-z5fcl4.e1g8pov64 > div:nth-child(1) > div > div:nth-child(17) {
+            padding-bottom: -150px !important;
+            margin-bottom: -150px !important;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+set_page_layout_2()
+
+
 HtmlFile2 = open('full_links_graph.html', 'r', encoding='utf-8')
 
 html(HtmlFile2.read(), height=900, width=1000)
+
 
 content_column_10 = st.columns((1, 2, 1))[1]
 with content_column_10:
