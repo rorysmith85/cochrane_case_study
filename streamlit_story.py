@@ -547,7 +547,7 @@ net_2.save_graph('full_links_graph.html')
 
 HtmlFile2 = open('full_links_graph.html', 'r', encoding='utf-8')
 
-html(HtmlFile2.read(), height=0, width=1000)
+html(HtmlFile2.read(), height=900, width=1000)
 
 content_column_10 = st.columns((1, 2, 1))[1]
 with content_column_10:
