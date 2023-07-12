@@ -472,8 +472,8 @@ def set_page_layout():
         """
         <style>
         #root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-z5fcl4.e1g8pov64 > div:nth-child(1) > div > div:nth-child(16) {
-            padding-top: -50px !important;
-            margin-top: -50px !important;
+            padding-top: -100px !important;
+            margin-top: -100px !important;
         }
         </style>
         """,
