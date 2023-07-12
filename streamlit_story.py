@@ -286,7 +286,7 @@ with content_column_3:
  	news stories would often present the study as evidence that masks are ineffective against Covid-19 or would fail to mention the tenuousness of the evidence and the limitations of the study. \
   	Content inaccurately depicting the findings received 6.4 times more retweets on Twitter and 3.4 times more interactions on Facebook than accurate content. None of the content we reviewed \
    	received a fact check despite a clarifying statement from Cochrane on March 10, 2023.") 
-	st.subeader("Influential Misinformation Spreaders Operate Across Multiple Platforms")
+	st.subheader("Influential Misinformation Spreaders Operate Across Multiple Platforms")
 	st.write("Some of the same personalities who posted content about the Cochrane review on Substack were also active across multiple social media platforms. For instance, Vinay Prasad was \
  	among several people and entities that posted misleading content about the study across YouTube, Twitter and Facebook.")
 	st.subheader("Substack as an Early Amplifier of Misinterpreted Findings")
