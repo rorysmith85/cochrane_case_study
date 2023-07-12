@@ -437,8 +437,8 @@ with content_column_7:
  	mentions of academic articles on the web), we gathered 152 news stories and Substack articles published between January 29 and April 1, 2023 addressing the Cochrane study. Of these /
   	news stories, 70 percent provided an incomplete analysis of the actual findings of the study or misrepresented them altogether. In such cases, news stories would often present the study as /
    	evidence that masks are ineffective against Covid-19 or would fail to mention the tenuousness of the evidence and the limitations of the study.''') 
-    	st.subheader("Media on Twitter")
-     	st.write("Media reports that misinterpreted or misleadingly portrayed the findings of the Cochrane study far outpaced those that accurately depicted the findings. Misleading stories \
+	st.subheader("Media on Twitter")
+	st.write("Media reports that misinterpreted or misleadingly portrayed the findings of the Cochrane study far outpaced those that accurately depicted the findings. Misleading stories \
       	received over 30 million impressions on Twitter compared with the nearly 18 million impressions that accurate stories received. The discrepancy was even greater \
        	for retweets. Misleading stories received nearly 140,000 retweets compared with just over 30,000 retweets received by stories accurately reporting on the study. In effect, \
 	misleading stories gleaned 1.6 times more impressions and four times more retweets than accurate stories.")
@@ -447,8 +447,8 @@ with content_column_7:
 news_stories = pd.read_csv("news_stories_final_april26.csv")
 scatter(news_stories)
 
-content_column_7 = st.columns((1, 2, 1))[1]
-with content_column_7:
+content_column_8 = st.columns((1, 2, 1))[1]
+with content_column_8:
 	st.write("Some of the first articles that appeared on Twitter after the Cochrane study came out were published on Substack. Over 90 percent (or 26 of the 28) Substack \
  	articles we identified inaccurately presented the study findings. These articles came primarily from the Substacks of Peter McCullough, Steve Kirsch, Robert Malone and Vinay Prasad, \
   	all controversial figures known for spreading misleading information about Covid-19 and public health policy during the pandemic.")
@@ -471,8 +471,8 @@ HtmlFile = open('nytimes_graph.html', 'r', encoding='utf-8')
 
 html(HtmlFile.read(), height=900, width=1000)
 
-content_column_8 = st.columns((1, 2, 1))[1]
-with content_column_8:
+content_column_9 = st.columns((1, 2, 1))[1]
+with content_column_9:
 	st.write("The visualization shows two clearly defined communities with very few accounts tweeting both stories, as signified by the nodes connecting the two clusters. \
  	The stark separation of these two communities may be seen as evidence that Tufekci’s op-ed, which dismissed and attempted to debunk claims made by Stephens, had little impact on \
   	the Twitter community supporting Stephens' view.")
@@ -549,8 +549,8 @@ HtmlFile2 = open('full_links_graph.html', 'r', encoding='utf-8')
 
 html(HtmlFile2.read(), height=900, width=1000)
 
-content_column_8 = st.columns((1, 2, 1))[1]
-with content_column_8:
+content_column_10 = st.columns((1, 2, 1))[1]
+with content_column_10:
 	st.write("Similar to the previous network, the broader network of Twitter accounts sharing all the news stories covering the Cochrane study was also highly polarized. Clusters of \
  	accounts sharing news stories misrepresenting the Cochrane study are separated from communities sharing accurate ones. The lack of links, or interactions, between the different \
   	clusters suggests that users are largely being exposed to, or are electing to consume, a single narrative about the Cochrane study. Given the outsized impact (in terms of impressions \
@@ -563,8 +563,8 @@ news_stories_facebook = pd.read_csv('aggregate_facebook.csv')
 
 scatter_facebook(news_stories_facebook)
 
-content_column_9 = st.columns((1, 2, 1))[1]
-with content_column_9:
+content_column_11 = st.columns((1, 2, 1))[1]
+with content_column_11:
 	st.write("However, whereas Substack articles featured frequently on Twitter, on Facebook they played a smaller role. We identified 28 Substack articles on Twitter, which made up 16 \
  	percent of all impressions, compared with 14 Substack articles on Facebook, which accounted for 5 percent of all interactions.")
 	st.header("Conclusion")
