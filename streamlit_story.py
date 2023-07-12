@@ -253,7 +253,7 @@ with content_column_1:
        	outlandish claims. The idea that the gold-standard institution for publishing systematic reviews on health care and health policy, Cochrane, was claiming any type of ambiguity around the \
 	effectiveness of masks was so surprising. And among reporters without a solid understanding of the limitations of Randomly Controlled Trials (RCTs), the suggestion in the faulty abstract — that \
  	there was insufficient evidence to support a conclusion that masks work — was understood by too many as "masks don't work."''')
-  	st.write("As more studies and preprints are published and disseminated across social media — where catchy headlines and cherry-picked evidence that aligns with certain views get clicks and \
+	st.write("As more studies and preprints are published and disseminated across social media — where catchy headlines and cherry-picked evidence that aligns with certain views get clicks and \
    	traffic — the risk of academic papers being taken out of context, misinterpreted, and then taken as fact will continue to be a major obstacle to building consensus around public health efforts.)
 
 
