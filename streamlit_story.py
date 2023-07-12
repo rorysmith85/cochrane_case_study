@@ -228,8 +228,8 @@ with content_column_1:
  	but without peer-review (pre-prints), and some information was based on little more than personal experience or conjecture.  The extraordinary amount of information made it very difficult for \
   	the public and even experts to differentiate between credible sources and manipulated or out-of-context findings.")
 	st.write("In January 2023, a poorly worded abstract (later acknowledged by the authors themselve) associated with a review of the evidence about the efficacy of masking – s – was published by \
- 	Cochrane, the gold-standard public health research organization in relation to a systematic review of the evidence around masking by. Cochrane — a misstep <a href="https://www.cochrane.org/news/statement-physical-interventions-interrupt-or-reduce-spread-respiratory-viruses-review"> \
-  	acknowledged by Cochrane itself</a>acknowledged by Cochrane itself — This case study exemplifies how easily academic research can be taken out of context and manipulated to fit the \
+ 	Cochrane, the gold-standard public health research organization in relation to a systematic review of the evidence around masking by. Cochrane — a misstep \
+  	[acknowledged by Cochrane itself](https://www.cochrane.org/news/statement-physical-interventions-interrupt-or-reduce-spread-respiratory-viruses-review) — This case study exemplifies how easily academic research can be taken out of context and manipulated to fit the \
    	pre-existing beliefs and narratives of different communities online, and why the ways in which research is communicated, particularly the methodologies used and the conclusions \
     	that can be drawn, are so fundamental.", unsafe_allow_html=True)
 	st.write("A thorough reading by a researcher with extensive methodological expertise would likely have led to accurate conclusions. However, the poorly worded abstract allowed individuals, \
