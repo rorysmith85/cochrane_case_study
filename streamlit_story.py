@@ -257,21 +257,26 @@ with content_column_1:
    	traffic — the risk of academic papers being taken out of context, misinterpreted, and then taken as fact will continue to be a major obstacle to building consensus around public health efforts.")
 
 
+content_column_2 = st.columns((1, 2, 1))[1]
 
-	st.subheader('Tracking the media spread on Twitter')
-	st.write("The scatterplot chronologically shows how different media outlets reported on the Cochrane study and the amount of engagement they received on Twitter.\
-	You can hover over the nodes in the plot to see more details and you can click on the link in the nodes to open the tweet. The nodes are sized based on the number of\
-	impressions or retweets they have received — the larger the node, the more impressions or retweets. The x axis represents the days between January 29 and April 2023, and the\
-	y axis is the cumulative amount of impressions or retweets.")
-	st.write("As you can see, media stories that misinterpreted or misleadingly portrayed the findings of the Cochrane study far outpaced (in terms of impressions,\
-	retweets, and number of stories) media stories that accurately depicted the findings of the study. Using Meltwater and scraping Altmetric, we found 152 news stories\
-	published between January 29 and April 1, 2023 addressing the the Cochrane study. Of these, 70% were misleading.")
-	y_axis = st.selectbox("Select the metric you are interested in:", options=["impressions_cumulative", "retweets_cumulative"], key='news_stories')
+# Add a header and a text paragraph under the title within the centered column
+with content_column_1:
+	st.subheader('Methodology')
+	st.write("For analyzing social media conversations, we gathered all the tweets, posts and videos that included the words cochrane and mask between January 29, 2023 and April 1, 2023, using the \
+ 	APIs of Twitter, Facebook and YouTube. The data resulted in thousands of tweets and posts. Because of this, we opted to focus on those tweets and posts that generated 80 percent of the retweets \
+  	(Twitter) and interactions (Facebook). Focusing on high-engagement posts allows us to capture accounts that [make up a disproportionately large share of content views and generally have an \
+   	outsized impact](https://healthfeedback.org/misinformation-superspreaders-thriving-on-musk-owned-twitter/) on social media conversations.")
+	st.write("To analyze news media coverage, we used the media analytics platform Meltwater (searching for the combination of *mask* AND *cochrane*) and scraped Altmetric (an analytics platform that \
+ 	tracks mentions of academic articles on the web). We gathered 152 news stories and Substack articles published between January 29 and April 1, 2023 addressing the Cochrane study.")
+	
 
-news_stories = pd.read_csv("news_stories_final_april26.csv")
+
+# y_axis = st.selectbox("Select the metric you are interested in:", options=["impressions_cumulative", "retweets_cumulative"], key='news_stories')
+
+# news_stories = pd.read_csv("news_stories_final_april26.csv")
 
 
-scatter(news_stories)
+# scatter(news_stories)
 
 content_column_1_point_5 = st.columns((1, 2.7, 1))[1]
 with content_column_1_point_5:
