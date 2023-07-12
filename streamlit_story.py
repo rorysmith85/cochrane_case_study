@@ -231,7 +231,7 @@ with content_column_1:
  	Cochrane, the gold-standard public health research organization in relation to a systematic review of the evidence around masking by. Cochrane — a misstep <a href="https://www.cochrane.org/news/statement-physical-interventions-interrupt-or-reduce-spread-respiratory-viruses-review"> \
   	acknowledged by Cochrane itself</a>acknowledged by Cochrane itself — This case study exemplifies how easily academic research can be taken out of context and manipulated to fit the \
    	pre-existing beliefs and narratives of different communities online, and why the ways in which research is communicated, particularly the methodologies used and the conclusions \
-    	that can be drawn, are so fundamental.")
+    	that can be drawn, are so fundamental.", unsafe_allow_html=True)
 	st.write("A thorough reading by a researcher with extensive methodological expertise would likely have led to accurate conclusions. However, the poorly worded abstract allowed individuals, \
  	who may have lacked the time or the appropriate methodological training to delve deeper, to draw inaccurate and potentially dangerous conclusions. This didn’t lead to obscure debates at public \
   	health academic conferences — it drove mainstream conversations based on the false assertion that masks don’t work.")
@@ -241,7 +241,7 @@ with content_column_1:
    	by Bret Stephens</a> accelerated the spread of misleading claims surrounding the study, declaring in its headline that “the mask mandates did nothing.”  Various fact-checks, \
     	<a href=https://www.cochrane.org/news/statement-physical-interventions-interrupt-or-reduce-spread-respiratory-viruses-review> a statement by Cochrane<a/>, which underlined how the results of the \
      	study were inconclusive, as well as <a href=https://www.nytimes.com/2023/03/10/opinion/masks-work-cochrane-study.html>another New York Times op-ed<a/> discussing that statement were issued but they \
-      	had little impact on the spread of misleading content on Facebook and Twitter.")
+      	had little impact on the spread of misleading content on Facebook and Twitter.", unsafe_allow_html=True)
        	st.write("Nonetheless, by the time the statement and second op-ed were published, inaccurate versions of the study findings had received at least 27 million impressions on Twitter, several million \
 	views on YouTube, and tens of thousands of interactions on Facebook across multiple languages.")
  	st.write("In this case study, we track the spread of content, including media reports, related to the findings of the Cochrane study on Twitter, Facebook and YouTube. It shows how poorly worded \
