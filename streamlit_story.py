@@ -222,20 +222,40 @@ content_column_1 = st.columns((1, 2, 1))[1]
 
 # Add a header and a text paragraph under the title within the centered column
 with content_column_1:
-	st.title('Masking the Truth: How a Cochrane Study Got Entangled in a Web of Misinformation')
-	st.header('A recent Cochrane meta-analysis examining the efficacy of masks in protecting against COVID-19 has become a focal point for misinformation and manipulation, with\
-	its findings taken out of context by anti-maskers and right-wing media outlets. This investigative piece traces the journey of the study from its publication to its misinterpretation\
-	and distortion and the subsequent spread of this content online.')
-	st.write("The COVID-19 pandemic has generated an unprecedented volume of scientific research, making it difficult for the public and even experts to differentiate between\
-	credible sources and manipulated or out-of-context findings. In today's world of constant information overload, the misinterpretation and hijacking of a Cochrane study on\
-	mask efficacy exemplifies how easily academic research can be misinterpreted and twisted to fit the beliefs and narratives of motivated communities.")
-	st.write("The recent Cochrane study on masks exemplifies the ease with which findings can be misinterpreted, misleading content can spread and the challenges of providing access to\
-	accurate information in today's complex information landscape")
-	st.write("As the study's manipulation journey unfolds – from Substack and German media to Zero Hedge and a misleading New York Times op-ed – it reveals the shortcomings of\
-	platforms like Twitter, YouTube, and Substack in ensuring access to accurate information, how corrections by both academic journals and media are relatively ineffective against\
-	the onslaught of misleading and highly politicized content, and how the once-revered gatekeepers of knowledge - academic journals - are increasingly weaponized.")
-	st.write("As more studies and preprints continue to be published, and where issues as seemingly innocuous as mask-wearing are highly politicized,\
-	the risk of academic papers being taken out of context and disseminated across social media and mainstream news will continue to be a threat.")
+	st.title('Masking the Truth: How a Cochrane Study Got Entangled in a Web of Misinterpretation')
+	st.header('A Cochrane meta-analysis examining the efficacy of masks in protecting against Covid-19 became a focal point for misleading narratives.')
+	st.write("The Covid-19 pandemic caused an explosion of new information, some based on scientific research that had received peer-review, some published immediately to help advance knowledge \
+ 	but without peer-review (pre-prints), and some information was based on little more than personal experience or conjecture.  The extraordinary amount of information made it very difficult for \
+  	the public and even experts to differentiate between credible sources and manipulated or out-of-context findings.")
+	st.write("In January 2023, a poorly worded abstract (later acknowledged by the authors themselve) associated with a review of the evidence about the efficacy of masking – s – was published by \
+ 	Cochrane, the gold-standard public health research organization in relation to a systematic review of the evidence around masking by. Cochrane — a misstep <a href="https://www.cochrane.org/news/statement-physical-interventions-interrupt-or-reduce-spread-respiratory-viruses-review"> \
+  	acknowledged by Cochrane itself</a>acknowledged by Cochrane itself — This case study exemplifies how easily academic research can be taken out of context and manipulated to fit the \
+   	pre-existing beliefs and narratives of different communities online, and why the ways in which research is communicated, particularly the methodologies used and the conclusions \
+    	that can be drawn, are so fundamental.")
+	st.write("A thorough reading by a researcher with extensive methodological expertise would likely have led to accurate conclusions. However, the poorly worded abstract allowed individuals, \
+ 	who may have lacked the time or the appropriate methodological training to delve deeper, to draw inaccurate and potentially dangerous conclusions. This didn’t lead to obscure debates at public \
+  	health academic conferences — it drove mainstream conversations based on the false assertion that masks don’t work.")
+	st.write("The original review was published on January 30, 2023, but almost immediately news stories and headlines <a href=https://www.washingtonexaminer.com/restoring-america/faith-freedom-self-reliance/gold-standard-scientific-study-finds-masks-are-useless-against-covid> \
+ 	misrepresenting the findings</a> and inaccurately claiming that “masks don’t work” jumped from Substack to ZeroHedge, the Washington Free Beacon and Fox News while simultaneously moving at speed \
+  	across Twitter and Facebook. On February 21, three weeks after the study’s publication, <a href=https://www.nytimes.com/2023/02/21/opinion/do-mask-mandates-work.html>an op-ed in the New York Times \
+   	by Bret Stephens</a> accelerated the spread of misleading claims surrounding the study, declaring in its headline that “the mask mandates did nothing.”  Various fact-checks, \
+    	<a href=https://www.cochrane.org/news/statement-physical-interventions-interrupt-or-reduce-spread-respiratory-viruses-review> a statement by Cochrane<a/>, which underlined how the results of the \
+     	study were inconclusive, as well as <a href=https://www.nytimes.com/2023/03/10/opinion/masks-work-cochrane-study.html>another New York Times op-ed<a/> discussing that statement were issued but they \
+      	had little impact on the spread of misleading content on Facebook and Twitter.")
+       	st.write("Nonetheless, by the time the statement and second op-ed were published, inaccurate versions of the study findings had received at least 27 million impressions on Twitter, several million \
+	views on YouTube, and tens of thousands of interactions on Facebook across multiple languages.")
+ 	st.write("In this case study, we track the spread of content, including media reports, related to the findings of the Cochrane study on Twitter, Facebook and YouTube. It shows how poorly worded \
+  	communications products can result in misleading coverage. In our networked information ecosystem, clarifying statements or corrections stand little chance of being effective, particularly on \
+   	issues that are politicized. And it raises questions about the need for stringent fact checking, even for op-ed pages, as reputable news sources have an outsized role in amplifying the spread of \
+    	information.)
+     	st.write("It also underlines how academic journals and research publications — the perennial gatekeepers of knowledge — no longer have any room for missteps or errors. On politicized topics \
+      	(and unfortunately viruses, masks and vaccines now fall into this category), “trusted” sources of information are increasingly being weaponized by those looking for “credible sources” to support \
+       	outlandish claims. The idea that the gold-standard institution for publishing systematic reviews on health care and health policy, Cochrane, was claiming any type of ambiguity around the \
+	effectiveness of masks was so surprising. And among reporters without a solid understanding of the limitations of Randomly Controlled Trials (RCTs), the suggestion in the faulty abstract — that \
+ 	there was insufficient evidence to support a conclusion that masks work — was understood by too many as "masks don't work.")
+  	st.write("As more studies and preprints are published and disseminated across social media — where catchy headlines and cherry-picked evidence that aligns with certain views get clicks and \
+   	traffic — the risk of academic papers being taken out of context, misinterpreted, and then taken as fact will continue to be a major obstacle to building consensus around public health efforts.)
+
 
 
 	st.subheader('Tracking the media spread on Twitter')
