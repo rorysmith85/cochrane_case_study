@@ -274,11 +274,10 @@ with content_column_1:
 	st.write("The Covid-19 pandemic caused an explosion of new information, some based on scientific research that had received peer-review, some published immediately to help advance knowledge \
  	but without peer-review (pre-prints), and some information was based on little more than personal experience or conjecture.  The extraordinary amount of information made it very difficult for \
   	the public and even experts to differentiate between credible sources and manipulated or out-of-context findings.")
-	st.write("In January 2023, a poorly worded abstract (later acknowledged by the authors themselve) associated with a review of the evidence about the efficacy of masking – s – was published by \
- 	Cochrane, the gold-standard public health research organization in relation to a systematic review of the evidence around masking by. Cochrane — a misstep \
-  	[acknowledged by Cochrane itself](https://www.cochrane.org/news/statement-physical-interventions-interrupt-or-reduce-spread-respiratory-viruses-review) — This case study exemplifies how easily academic research can be taken out of context and manipulated to fit the \
-   	pre-existing beliefs and narratives of different communities online, and why the ways in which research is communicated, particularly the methodologies used and the conclusions \
-    	that can be drawn, are so fundamental.", unsafe_allow_html=True)
+	st.write("In January 2023, a poorly worded abstract ([later acknowledged by the authors themselves](https://www.cochrane.org/news/statement-physical-interventions-interrupt-or-reduce-spread-respiratory-viruses-review)) associated with a review of the evidence about the efficacy of masking was published by \
+ 	Cochrane, the public health research organization in relation to a systematic review of the evidence around masking.", unsafe_allow_html=True)
+	st.write("This case study exemplifies how easily academic research can be taken out of context and manipulated to fit the pre-existing beliefs and narratives of different \
+ 	communities online, and why the ways in which research is communicated, particularly the methodologies used and the conclusions that can be drawn, are so fundamental.")
 	st.write("A thorough reading by a researcher with extensive methodological expertise would likely have led to accurate conclusions. However, the poorly worded abstract allowed individuals, \
  	who may have lacked the time or the appropriate methodological training to delve deeper, to draw inaccurate and potentially dangerous conclusions. This didn’t lead to obscure debates at public \
   	health academic conferences — it drove mainstream conversations based on the false assertion that masks don’t work.")
