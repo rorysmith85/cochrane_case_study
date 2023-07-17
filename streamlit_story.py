@@ -274,17 +274,30 @@ with content_column_1:
 	st.write("The Covid-19 pandemic caused an explosion of new information, some based on scientific research that had received peer-review, some published immediately to help advance knowledge \
  	but without peer-review (pre-prints), and some information was based on little more than personal experience or conjecture.  The extraordinary amount of information made it very difficult for \
   	the public and even experts to differentiate between credible sources and manipulated or out-of-context findings.")
-	st.write("In January 2023, a poorly worded abstract ([later acknowledged by the authors themselves](https://www.cochrane.org/news/statement-physical-interventions-interrupt-or-reduce-spread-respiratory-viruses-review)) associated with a review of the evidence about the efficacy of masking was published by \
- 	Cochrane, the public health research organization in relation to a systematic review of the evidence around masking.", unsafe_allow_html=True)
-	st.write("This case study exemplifies how easily academic research can be taken out of context and manipulated to fit the pre-existing beliefs and narratives of different \
- 	communities online, and why the ways in which research is communicated, particularly the methodologies used and the conclusions that can be drawn, are so fundamental.")
-	st.write("A thorough reading by a researcher with extensive methodological expertise would likely have led to accurate conclusions. However, the poorly worded abstract allowed individuals, \
- 	who may have lacked the time or the appropriate methodological training to delve deeper, to draw inaccurate and potentially dangerous conclusions. This didn’t lead to obscure debates at public \
-  	health academic conferences — it drove mainstream conversations based on the false assertion that masks don’t work.")
+	st.write("In January 2023, a poorly worded abstract from a systematic review of evidence about the efficacy of masking was published by Cochrane Library, the public health research organization. \
+ 	The editor-in-chief of Cochrane Library [later acknowledged](https://www.cochrane.org/news/statement-physical-interventions-interrupt-or-reduce-spread-respiratory-viruses-review)the poor wording \
+  	of the abstract in a separate statement.", unsafe_allow_html=True)
+	st.write('''The abstract of the review stated: “We are uncertain whether wearing masks or N95/P2 respirators helps to slow the spread of respiratory viruses based on the studies we assessed.” \
+ 	Among people without a solid understanding of research methodologies, including reporters, the abstract was understood as "masks don't work" against Covid-19 and other respiratory illnesses. \
+  	These flawed conclusions, however, failed to acknowledge that [“the absence of evidence of effectiveness is not the same as having evidence of ineffectiveness"]((https://www.nytimes.com/2023/04/30/opinion/masks-pandemic.html).''')
+	st.write("The review, which looked specifically at randomized trials, suffered from several limitations. There are only a handful of randomized trials specific to mask-wearing, the vast \
+ 	majority of which were not conducted during the Covid-19 pandemic, thereby limiting the applicability of the findings to the pandemic. The review relied primarily on studies focused on \
+  	influenza, a disease with different characteristics compared with Covid-19. Furthermore, these studies were carried out in vastly different contexts, where norms, behaviors and knowledge \
+   	about adherence to mask-wearing and proper use of masks was difficult to account for. Adherence to mask-wearing is challenging to control for in large-scale studies, muddying attempts to \
+    	conclusively say at the population level whether masks are effective or whether people’s failure to properly wear masks and adhere to mask guidelines resulted in the lack of an effect.")
+	st.write("This case study exemplifies how easily such subtle yet fundamental distinctions, which are constant products of knowledge creation and academic research, can be taken out of \
+ 	context and manipulated to fit the pre-existing beliefs and narratives of different communities online. It also shows why the ways in which research is communicated, particularly the \
+  	methodologies used and the conclusions that can be drawn, are so fundamental.")
+	st.write("A thorough reading by a researcher with extensive methodological expertise would likely have led to accurate conclusions. However, the poorly worded abstract encouraged \
+ 	individuals to draw inaccurate and potentially dangerous conclusions, particularly those who may have lacked the time or the appropriate methodological training to delve more deeply.  \
+  	In a pre-social media era, or around a less politicized topic, this type of misstep might only have led to lively discussions at public health academic conferences — instead it drove \
+   	mainstream conversations based on the false assertion that masks don’t work.")
 	st.write("The original review was published on January 30, 2023, but almost immediately news stories and headlines <a href=https://www.washingtonexaminer.com/restoring-america/faith-freedom-self-reliance/gold-standard-scientific-study-finds-masks-are-useless-against-covid> \
- 	misrepresenting the findings</a> and inaccurately claiming that “masks don’t work” jumped from Substack to ZeroHedge, the Washington Free Beacon and Fox News while simultaneously moving at speed \
-  	across Twitter and Facebook. On February 21, three weeks after the study’s publication, [an op-ed in the New York Times \
-   	by Bret Stephens](https://www.nytimes.com/2023/02/21/opinion/do-mask-mandates-work.html) accelerated the spread of misleading claims surrounding the study, declaring in its headline that “the mask mandates did nothing.”  Various fact-checks, \
+ 	misrepresenting the findings</a> and inaccurately claiming that “masks don’t work” jumped from the subscription blogging platform Substack to ZeroHedge (a news blog known recently for \
+  	amplifying conspiracy theories), the Washington Free Beacon and Fox News, among other conservative outlets, to mainstream news sites such as Yahoo, while simultaneously moving at speed \
+   	across Twitter and Facebook.") 
+    	st.write("On February 21, three weeks after the study’s publication, [an op-ed in the New York Times by Bret Stephens](https://www.nytimes.com/2023/02/21/opinion/do-mask-mandates-work.html) \
+     	accelerated the spread of misleading claims surrounding the study, declaring in its headline that “the mask mandates did nothing.”  Various fact-checks, \
     	[a statement by Cochrane](https://www.cochrane.org/news/statement-physical-interventions-interrupt-or-reduce-spread-respiratory-viruses-review), which underlined how the results of the \
      	study were inconclusive, as well as [another New York Times op-ed](https://www.nytimes.com/2023/03/10/opinion/masks-work-cochrane-study.html) discussing that statement were issued but they \
       	had little impact on the spread of misleading content on Facebook and Twitter.", unsafe_allow_html=True)
