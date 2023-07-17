@@ -296,7 +296,7 @@ with content_column_1:
  	misrepresenting the findings</a> and inaccurately claiming that “masks don’t work” jumped from the subscription blogging platform Substack to ZeroHedge (a news blog known recently for \
   	amplifying conspiracy theories), the Washington Free Beacon and Fox News, among other conservative outlets, to mainstream news sites such as Yahoo, while simultaneously moving at speed \
    	across Twitter and Facebook.") 
-    	st.write("On February 21, three weeks after the study’s publication, [an op-ed in the New York Times by Bret Stephens](https://www.nytimes.com/2023/02/21/opinion/do-mask-mandates-work.html) \
+	st.write("On February 21, three weeks after the study’s publication, [an op-ed in the New York Times by Bret Stephens](https://www.nytimes.com/2023/02/21/opinion/do-mask-mandates-work.html) \
      	accelerated the spread of misleading claims surrounding the study, declaring in its headline that “the mask mandates did nothing.”  Various fact-checks, \
     	[a statement by Cochrane](https://www.cochrane.org/news/statement-physical-interventions-interrupt-or-reduce-spread-respiratory-viruses-review), which underlined how the results of the \
      	study were inconclusive, as well as [another New York Times op-ed](https://www.nytimes.com/2023/03/10/opinion/masks-work-cochrane-study.html) discussing that statement were issued but they \
