@@ -279,7 +279,7 @@ with content_column_1:
   	of the abstract in a separate statement.", unsafe_allow_html=True)
 	st.write('''The abstract of the review stated: “We are uncertain whether wearing masks or N95/P2 respirators helps to slow the spread of respiratory viruses based on the studies we assessed.” \
  	Among people without a solid understanding of research methodologies, including reporters, the abstract was understood as "masks don't work" against Covid-19 and other respiratory illnesses. \
-  	These flawed conclusions, however, failed to acknowledge that [“the absence of evidence of effectiveness is not the same as having evidence of ineffectiveness"]((https://www.nytimes.com/2023/04/30/opinion/masks-pandemic.html).''')
+  	These flawed conclusions, however, failed to acknowledge that [“the absence of evidence of effectiveness is not the same as having evidence of ineffectiveness"](https://www.nytimes.com/2023/04/30/opinion/masks-pandemic.html).''')
 	st.write("The review, which looked specifically at randomized trials, suffered from several limitations. There are only a handful of randomized trials specific to mask-wearing, the vast \
  	majority of which were not conducted during the Covid-19 pandemic, thereby limiting the applicability of the findings to the pandemic. The review relied primarily on studies focused on \
   	influenza, a disease with different characteristics compared with Covid-19. Furthermore, these studies were carried out in vastly different contexts, where norms, behaviors and knowledge \
@@ -292,8 +292,8 @@ with content_column_1:
  	individuals to draw inaccurate and potentially dangerous conclusions, particularly those who may have lacked the time or the appropriate methodological training to delve more deeply.  \
   	In a pre-social media era, or around a less politicized topic, this type of misstep might only have led to lively discussions at public health academic conferences — instead it drove \
    	mainstream conversations based on the false assertion that masks don’t work.")
-	st.write("The original review was published on January 30, 2023, but almost immediately news stories and headlines <a href=https://www.washingtonexaminer.com/restoring-america/faith-freedom-self-reliance/gold-standard-scientific-study-finds-masks-are-useless-against-covid> \
- 	misrepresenting the findings</a> and inaccurately claiming that “masks don’t work” jumped from the subscription blogging platform Substack to ZeroHedge (a news blog known recently for \
+	st.write("The original review was published on January 30, 2023, but almost immediately [news stories and headlines](https://www.washingtonexaminer.com/restoring-america/faith-freedom-self-reliance/gold-standard-scientific-study-finds-masks-are-useless-against-covid) \
+ 	misrepresenting the findings and inaccurately claiming that “masks don’t work” jumped from the subscription blogging platform Substack to ZeroHedge (a news blog known recently for \
   	amplifying conspiracy theories), the Washington Free Beacon and Fox News, among other conservative outlets, to mainstream news sites such as Yahoo, while simultaneously moving at speed \
    	across Twitter and Facebook.") 
 	st.write("On February 21, three weeks after the study’s publication, [an op-ed in the New York Times by Bret Stephens](https://www.nytimes.com/2023/02/21/opinion/do-mask-mandates-work.html) \
